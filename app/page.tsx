@@ -2,9 +2,21 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div>
-      <h1>Welcome to My Dance Studio Website</h1>
-      <p>This is a custom HTML content for the homepage.</p>
-    </div>
+    
+    <header>
+      <div className="logo">
+        <a href="#">Studio Ann</a>
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="#">NEWS</a></li>
+          <li><a href="#">ABOUT</a></li>
+          <li><a href="#">SERVICES</a></li>
+          <li><a href="#">CONTACT</a></li>
+        </ul>
+      </nav>
+    </header>
+    
   );
 }
