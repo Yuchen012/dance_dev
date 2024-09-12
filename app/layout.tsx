@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Link from 'next/link';
+import Image from 'next/image'
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
@@ -9,7 +10,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body>
         <header>
           <div className="logo">
-            <a href="#">Studio Ann</a>
+          <Image src="/logo.png" alt="Logo" width={150} height={50} />
           </div>
 
           <nav>
